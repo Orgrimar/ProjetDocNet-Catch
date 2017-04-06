@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjetDocNet_Catch
 {
-    enum StatuEnum
+    public enum StatuEnum
     {
         Disponible,
         Morgue,

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjetDocNet_Catch
 {
-    abstract class Catcheur
+    public abstract class Catcheur
     {
         public string Nom { get; set; }
         public int Hp { get; set; }

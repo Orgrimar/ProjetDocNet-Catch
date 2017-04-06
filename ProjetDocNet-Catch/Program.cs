@@ -67,8 +67,6 @@ namespace ProjetDocNet_Catch
                             Environment.Exit(0);
                         break;
                 }
-                //Debreif
-
                 //Continuer ou quitter
                 if (semaine == 8)
                 {
