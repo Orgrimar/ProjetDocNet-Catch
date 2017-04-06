@@ -8,6 +8,24 @@ namespace ProjetDocNet_Catch
 {
     class Program
     {
+        public void ChoixAction()
+        {
+            Random rnd = new Random();
+            int action = rnd.Next(1, 3);
+            switch (action)
+            {
+                case 1:
+                    //Frapper(target, attaquant);
+                    break;
+                case 2:
+                    //Defendre(target, attaquant);
+                    break;
+                case 3:
+                    //CompSpec(target, attaquant);
+                    break;
+            }
+        }
+
         static void Jeu()
         {
             int semaine = 0;
