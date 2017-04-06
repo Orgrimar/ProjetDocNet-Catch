@@ -13,18 +13,15 @@ namespace ProjetDocNet_Catch
         public int Str { get; set; }
         public int Def { get; set; }
 
+        public StatuEnum Statu { get; set; }
 
-        enum Status { Disponible, Morgue, Hospital };
-        enum Action { Frapper, Defendre, CompetenceSpeciale };
-
-        int status = (int)Status.Disponible;
-        
         public Catcheur(string nom, int hp, int str, int def)
         {
             Nom = nom;
             Hp = hp;
             Str = str;
             Def = def;
+            Statu = StatuEnum.Disponible;
         }
 
         public void ChoixAction()
@@ -65,8 +62,6 @@ namespace ProjetDocNet_Catch
             }
 
         }
-
-        List<Catcheur> combat = new List<Catcheur>();
 
         public abstract void SoignerCatcheur(Catcheur target);
     }
