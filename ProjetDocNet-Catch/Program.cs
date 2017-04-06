@@ -11,7 +11,7 @@ namespace ProjetDocNet_Catch
         static void ChoixAction()
         {
             Random rnd = new Random();
-            int action = rnd.Next(1, 3);
+            int action = rnd.Next(1, 2);
             switch (action)
             {
                 case 1:
