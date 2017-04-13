@@ -62,7 +62,8 @@ namespace ProjetDocNet_Catch
                         Console.WriteLine("Etes-vous sur de vouloir quitter ?");
                         Console.WriteLine("1 - Oui");
                         Console.WriteLine("2 - Non");
-                        int.TryParse(Console.ReadLine(), out int choixQuit);
+                        int choixQuit;
+                        int.TryParse(Console.ReadLine(), out choixQuit);
                         if (choixQuit == 1)
                             Environment.Exit(0);
                         break;
@@ -86,7 +87,8 @@ namespace ProjetDocNet_Catch
             Console.WriteLine("Bienvenue");
             Console.WriteLine("1 - Jouer");
             Console.WriteLine("2 - Quitter");
-            int.TryParse(Console.ReadLine(), out int choix);
+            int choix;
+            int.TryParse(Console.ReadLine(), out choix);
             if (choix == 1)
                 Jeu();
         }
@@ -102,15 +104,34 @@ namespace ProjetDocNet_Catch
                 Console.WriteLine("Souhaitez-vous quitter ?");
                 Console.WriteLine("1 - Oui");
                 Console.WriteLine("2 - Non");
-                int.TryParse(Console.ReadLine(), out int choix);
+                int choix;
+                int.TryParse(Console.ReadLine(), out choix);
                 if (choix == 1)
                     quitter = true;
             }
         }
 
+        static void InitGame()
+        {
+            Brute catcheur1 = new Brute("L'ordonnateur des pompes funebres", StatuEnum.Disponible);
+            Brute catcheur2 = new Brute("Judy Sunny", StatuEnum.Disponible);
+            Agile catcheur3 = new Agile("Triple hache", StatuEnum.Disponible);
+            Agile catcheur4 = new Agile("Dead poule", StatuEnum.Disponible);
+            Brute catcheur5 = new Brute("Jarvan cinquième du nom", StatuEnum.Convalescense);
+            Agile catcheur6 = new Agile("Madusa", StatuEnum.Disponible);
+            Agile catcheur7 = new Agile("John Cinema", StatuEnum.Convalescense);
+            Brute catcheur8 = new Brute("Jeff Radis", StatuEnum.Convalescense);
+            Brute catcheur9 = new Brute("Raie Mysterieuse", StatuEnum.Disponible);
+            Brute catcheur10 = new Brute("Chris Hart", StatuEnum.Disponible);
+            Agile catcheur11 = new Agile("Bret Benoit", StatuEnum.Disponible);
+        }
+
         static void Main(string[] args)
         {
+            InitGame();
             Appli();
+
+            Console.ReadLine();
         }
     }
 }

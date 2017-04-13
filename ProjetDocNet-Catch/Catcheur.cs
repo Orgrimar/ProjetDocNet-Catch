@@ -15,13 +15,10 @@ namespace ProjetDocNet_Catch
 
         public StatuEnum Statu { get; set; }
 
-        public Catcheur(string nom, int hp, int str, int def)
+        public Catcheur(string nom, StatuEnum statu)
         {
             Nom = nom;
-            Hp = hp;
-            Str = str;
-            Def = def;
-            Statu = StatuEnum.Disponible;
+            Statu = statu;
         }
 
         public void Frapper(Catcheur target, Catcheur attaquant)
@@ -43,6 +40,18 @@ namespace ProjetDocNet_Catch
 
             }
 
+        }
+
+        public void Hopital()
+        {
+            Statu = StatuEnum.Convalescense;
+            Random rnd = new Random();
+            int tourHS = rnd.Next(2, 5);
+        }
+
+        public void Mort()
+        {
+            Statu = StatuEnum.Morgue;
         }
 
         public abstract void SoignerCatcheur(Catcheur target);

@@ -10,24 +10,13 @@ namespace ProjetDocNet_Catch
     {
         private int _hpMax;
 
-        public Brute(string nom, int hp, int str, int def) 
-            : base(nom, hp, str, def)
+        public Brute(string nom, StatuEnum statu) 
+            : base(nom, statu)
         {
             _hpMax = 100;
             Str = 5;
             Def = 1;
-        }
-
-        public void Hopital()
-        {
-            Statu = StatuEnum.Convalescense;
-            Random rnd = new Random();
-            int tourHS = rnd.Next(2, 5);
-        }
-
-        public void Mort()
-        {
-            Statu = StatuEnum.Morgue;
+            Hp = _hpMax;
         }
 
         public override void SoignerCatcheur(Catcheur target)
