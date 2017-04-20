@@ -19,7 +19,7 @@ namespace MyFightCatchApp
         {
              Catcheurs = new List<Catcheur> {
                 new Brute("L'ordonnateur des pompes funebres", StatutEnum.Disponible),
-                new Brute("Judy Sunny", StatutEnum.Disponible),
+                new Brute("JudySunny", StatutEnum.Disponible),
                 new Agile("Triple hache", StatutEnum.Disponible),
                 new Agile("Dead poule", StatutEnum.Disponible),
                 new Brute("Jarvan cinquième du nom", StatutEnum.Convalescense),
@@ -69,10 +69,11 @@ namespace MyFightCatchApp
 
             return intSelectedMenu;
         }
-        public void SelectCatcheurs(Catcheur C1,Catcheur C2)
+        public void SelectCatcheurs()
         {
             int select1, select2;
-            Console.WriteLine("Veuiller choisir deux Catcheurs :");
+            Console.WriteLine("Veuiller choisir deux Catcheurs  dans la liste :");
+            AfficheList();
             Console.WriteLine("Choix du premier catcheur : ");
             select1 = TestUserInput(0,Catcheurs.Count);    
             do
@@ -81,8 +82,11 @@ namespace MyFightCatchApp
                 select2 = TestUserInput(0, Catcheurs.Count);
                  
             } while (select1 == select2);
-             C1 = Catcheurs[select1];
-             C2 = Catcheurs[select2];
+            Catcheur C1 = Catcheurs[select1];
+            Catcheur C2 = Catcheurs[select2];
+            Console.WriteLine("Catcheur choisi :");
+            Console.WriteLine("Catcheur 1 : " + C1.Nom);
+            Console.WriteLine("Catcheur 2 : " + C2.Nom);
         }
         public  void DisplayWelcomeMessage()
 		{
@@ -90,7 +94,6 @@ namespace MyFightCatchApp
 			Console.WriteLine("**Bienvenue dans l'application de combat de catch, prêt pour le combat ?*");
 			Console.WriteLine("*************************************************************************");
 		}
-
 		public static void DisplayGoodByeMessage()
 		{
 			Console.WriteLine("Merci d'avoir participé au combat !");
@@ -106,8 +109,9 @@ namespace MyFightCatchApp
             Console.WriteLine("5 - Quitter");
         }
        
-		private void Jeu(Catcheur C1, Catcheur C2)
+		private void Jeu()
 		{
+            
             Match match = new Match();
             int choix;
             int choixSemaine;
@@ -124,13 +128,9 @@ namespace MyFightCatchApp
                 {
                     case 1:
                         {
-                            SelectCatcheurs(C1, C2);
-                            Console.WriteLine("Catcheur choisi :");
-                            Console.WriteLine("Catcheur 1 : "+ C1.Nom);
-                            Console.WriteLine("Catcheur 2 : "+ C2.Nom);
-                            match.CommencerCombat(C1, C2);
-
-
+                            SelectCatcheurs();
+                            
+                            //match.CommencerCombat(C1, C2);
                         }
                         
                         break;
@@ -176,7 +176,7 @@ namespace MyFightCatchApp
 			}
 		}
 
-		private void MenuPrincipal(Catcheur C1,Catcheur C2)
+		private void MenuPrincipal()
 		{
             DisplayWelcomeMessage();
 			Console.WriteLine("1 - Jouer");
@@ -187,7 +187,7 @@ namespace MyFightCatchApp
 			int.TryParse(choixstr, out choix);
 			if (choix == 1)
             {
-                Jeu(C1,C2);
+                Jeu();
             }
             else
             {
@@ -195,12 +195,12 @@ namespace MyFightCatchApp
             }
 		}
 
-		public void Appli(Catcheur C1, Catcheur C2)
+		public void Appli()
 		{
 			bool quitter = false;
 			while (!quitter)
 			{
-				MenuPrincipal(C1,C2);
+				MenuPrincipal();
 
 				//Fin de programme
 				Console.WriteLine("Souhaitez-vous quitter ?");

@@ -14,21 +14,21 @@ namespace MyFightCatchApp
 
         public static void Main(string[] args)
 		{
-            MenuDisplayer jeu = new MenuDisplayer();
+           MenuDisplayer jeu = new MenuDisplayer();
 
          
-            Console.WriteLine("Veuiller choisir deux Catcheurs :");
-            Console.WriteLine("Choix du premier catcheur : ");
-            string namec1 = Console.ReadLine();
-            Console.WriteLine("Choix du second catcheur : ");
-            string namec2 = Console.ReadLine();
+            //Console.WriteLine("Veuiller choisir deux Catcheurs :");
+           // Console.WriteLine("Choix du premier catcheur : ");
+            //string namec1 = Console.ReadLine();
+            //Console.WriteLine("Choix du second catcheur : ");
+            //string namec2 = Console.ReadLine();
 
 
 
-            Catcheur C1 = jeu.Catcheurs.Find(x => x.Nom == namec1);
-            Catcheur C2 = jeu.Catcheurs.Find(x => x.Nom == namec2);
+             //Catcheur C1 = jeu.Catcheurs.Find(x => x.Nom == namec1);
+             //Catcheur C2 = jeu.Catcheurs.Find(x => x.Nom == namec2);
 
-            jeu.Appli(C1,C2);
+            jeu.Appli();
             Console.WriteLine("Appuyer sur n'importe quels touche pour continuer...");
             Console.ReadLine();
 		}
