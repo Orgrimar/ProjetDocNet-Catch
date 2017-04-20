@@ -1,0 +1,23 @@
+﻿<Properties StartupConfiguration="{AF88D159-A273-4505-9480-8072EE61759D}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MyFightCatchApp/Catcheur.cs">
+    <Files>
+      <File FileName="MyFightCatchApp/Match.cs" Line="12" Column="3" />
+      <File FileName="MyFightCatchApp/Competences.cs" Line="19" Column="6" />
+      <File FileName="MyFightCatchApp/Catcheur.cs" Line="28" Column="4" />
+      <File FileName="MyFightCatchApp/StatutEnum.cs" Line="13" Column="17" />
+      <File FileName="MyFightCatchApp/Helpers.cs" Line="1" Column="1" />
+      <File FileName="MyFightCatchApp/ListFighters.cs" Line="19" Column="2" />
+      <File FileName="MyFightCatchApp/MenuDisplayer.cs" Line="33" Column="30" />
+      <File FileName="MyFightCatchApp/Program.cs" Line="14" Column="4" />
+      <File FileName="MyFightCatchApp/Agile.cs" Line="23" Column="23" />
+      <File FileName="MyFightCatchApp/Brute.cs" Line="19" Column="4" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.MyFightCatchApp PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
