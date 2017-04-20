@@ -1,0 +1,15 @@
+/Users/kev/Projects/MyFightCatchApp/MyFightCatchApp/bin/Debug/MyFightCatchApp.exe
+/Users/kev/Projects/MyFightCatchApp/MyFightCatchApp/bin/Debug/MyFightCatchApp.pdb
+/Users/kev/Projects/MyFightCatchApp/MyFightCatchApp/obj/x86/Debug/MyFightCatchApp.csproj.CoreCompileInputs.cache
+/Users/kev/Projects/MyFightCatchApp/MyFightCatchApp/obj/x86/Debug/MyFightCatchApp.exe
+/Users/kev/Projects/MyFightCatchApp/MyFightCatchApp/obj/x86/Debug/MyFightCatchApp.pdb
+D:\Desktop\C#\MyFightCatchApp\MyFightCatchApp\obj\x86\Debug\MyFightCatchApp.csprojResolveAssemblyReference.cache
+D:\Desktop\C#\MyFightCatchApp\MyFightCatchApp\obj\x86\Debug\MyFightCatchApp.exe
+D:\Desktop\C#\MyFightCatchApp\MyFightCatchApp\obj\x86\Debug\MyFightCatchApp.pdb
+D:\Desktop\C#\MyFightCatchApp\MyFightCatchApp\bin\Debug\MyFightCatchApp.exe
+D:\Desktop\C#\MyFightCatchApp\MyFightCatchApp\bin\Debug\MyFightCatchApp.pdb
+\\Mac\Home\Desktop\C#\MyFightCatchApp\MyFightCatchApp\obj\x86\Debug\MyFightCatchApp.exe
+\\Mac\Home\Desktop\C#\MyFightCatchApp\MyFightCatchApp\obj\x86\Debug\MyFightCatchApp.pdb
+\\Mac\Home\Desktop\C#\MyFightCatchApp\MyFightCatchApp\bin\Debug\MyFightCatchApp.exe
+\\Mac\Home\Desktop\C#\MyFightCatchApp\MyFightCatchApp\bin\Debug\MyFightCatchApp.pdb
+\\Mac\Home\Desktop\C#\MyFightCatchApp\MyFightCatchApp\obj\x86\Debug\MyFightCatchApp.csprojResolveAssemblyReference.cache

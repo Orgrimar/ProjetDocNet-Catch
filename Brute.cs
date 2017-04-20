@@ -11,12 +11,9 @@ namespace MyFightCatchApp
         private int _hpMax;
 
         public Brute(string nom, StatutEnum statu)
-            : base(nom, statu)
+            : base(100,5,1)
         {
             _hpMax = 100;
-            Str = 5;
-            Def = 1;
-            Hp = _hpMax;
         }
 
         public override void SoignerCatcheur(Catcheur target)

@@ -94,12 +94,12 @@ namespace MyFightCatchApp
 			Console.WriteLine("**Bienvenue dans l'application de combat de catch, prêt pour le combat ?*");
 			Console.WriteLine("*************************************************************************");
 		}
-		public static void DisplayGoodByeMessage()
+		public  void DisplayGoodByeMessage()
 		{
 			Console.WriteLine("Merci d'avoir participé au combat !");
 			Console.WriteLine("A bientôt");
 		}
-        static void DisplayMenuSemaine()
+        public void DisplayMenuSemaine()
         {
             Console.WriteLine("Que souhaitez-vous faire ?");
             Console.WriteLine("1 - Créer le match de samedi prochain");

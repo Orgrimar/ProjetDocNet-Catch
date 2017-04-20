@@ -16,10 +16,13 @@ namespace MyFightCatchApp
 
         public StatutEnum Statu { get; set; }
 
-        public Catcheur(string nom, StatutEnum statu)
+        public Catcheur(int hp,int att,int def)
         {
-            Nom = nom;
-            Statu = statu;
+            Hp = hp;
+            Str = att;
+            Def = def;
+            //Nom = nom;
+            //Statu = statu;
         }
 
         public void Frapper(Catcheur enemi)
